@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Meeting</title>
+</head>
+
+<body>
+    <header>
+        <h1>Amazon Meeting</h1>
+    </header>
+    <nav>
+        <a href="#meeting-info">Meeting Info</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#business">Business</a>
+        <a href="#miscellaneous">Miscellaneous</a>
+    </nav>
+    <main>
+        <section id="meeting-info">
+            <div>
+                <h2>Meeting Info</h2>
+                <h3>Topic: Brainstorming</h3>
+                <p>Date: April 14th, 2023</p>
+                <span>Meeting ID: AMZN198301</span>
+            </div>
+            <hr>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul>
+                <li>Bob</li>
+                <li>Steven</li>
+                <li>Jennifer</li>
+                <li>John</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Debug performance issues on site</li>
+                <li>Push style changes to main</li>
+                <li>Discuss new possible style updates to website</li>
+            </ol>
+        </section>
+
+        <section id="business">
+            <h2>Business</h2>
+            <i>Unfinished business</i>
+            <p><strong>Performance issues: </strong>Could be due to server overload. <em>Requires further
+                    discussion</em></p>
+            <i>New business</i>
+            <p><b>Update UI/UX of site: </b>Consider more minimalistic approach to elements</p>
+        </section>
+
+        <section id="miscellaneous">
+            <h2>Miscellaneous</h2>
+            <details>
+                <summary>Questions/Concerns</summary>
+                <p>None</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Current Webpage:</h2>
+            <img src="./imgs/amazonwebpage.jpeg" alt="Picture of current Amazon website" width="500">
+        </section>
+
+        <section>
+            <h2>Random Audio/Video</h2>
+            <audio controls>
+                <source src="./rec/guitar.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <video controls poster="./imgs/killbill.jpeg">
+                <source src="./rec/guitarvideo.mp4" type="video/mp4">
+                Your browser does not support the audio element.
+            </video>
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                    <br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="asia">Asia</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                    <br>
+                    <label for="age">Age</label>
+                    <input list="ages" id="agechoice" name="agechoice">
+                    <datalist id="ages">
+                        <option value="0-18">
+                        <option value="19-24">
+                        <option value="25-39">
+                        <option value="40-64">
+                        <option value="65+">
+                    </datalist>
+                    <br>
+                    <label>SMS or Email?</label>
+                    <input type="checkbox">
+                    <label for="SMS">SMS</label>
+                    <input type="checkbox">
+                    <label for="email">Email</label>
+                    <br>
+                    <label>Subscribe to Amazon Newsletter?</label>
+                    <input type="radio">
+                    <label>Yes</label>
+                    <input type="radio">
+                    <label>No</label>
+                    <br>
+                    <label for="Addinfo">Additional Information:</label>
+                    <br>
+                    <textarea name="Addinfo" id="Addinfo" cols="30" rows="10"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
