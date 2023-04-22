@@ -1,6 +1,6 @@
 /* Styling the header tags */
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Noto Serif JP', serif;
 }
 h2 {
     color: aqua;
@@ -25,12 +25,14 @@ h1 {
     font-size: 5vh;
 }
 nav {
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
     overflow: auto;
 }
 nav a {
-    float: left;
-    padding: 12px;
+    margin: auto;
+    padding: 20px;
     color: hsl(248, 53%, 58%);
     text-decoration: none;
     font-size: 17px;
@@ -38,9 +40,82 @@ nav a {
 }
 nav a:hover {
     background-color: #000;
+    height: auto;
+    width: auto;
 }
-button {
+.submit-button {
+    width: 10em;
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 }
-button:active {
+.submit-button:active {
     box-shadow: 2px 2px 5px #FC894D;
 }
+strong, b {
+    text-decoration: dotted underline;
+}
+ul, ol{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+body {
+    background-color: lightseagreen;
+}
+#test-div :not(#first-h2){
+    position: relative;
+    transform: rotate(180deg);
+    padding: 10px 10px 10px 10px;
+}
+.interactive {
+    position: absolute;
+    top: 280px;
+    width: 300px;
+    height: 100px;
+}
+#business {
+    background: papayawhip;
+    line-height: 1.7em;
+    max-width: max-content;
+    min-width: none;
+}
+.summary {
+    background: orange;
+}
+@media screen and (min-width: 700px) {
+    nav a:hover {
+      cursor: pointer;
+    }
+}
+/* strong ~ p {
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+} */
+ul li {
+    list-style: none;
+}
+details > p {
+    color: #f34079;
+}
+form label {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    border-radius: 4px;
+}
+i ~ p {
+    color: #f34079;
+}
+ol li:first-of-type + li {
+    color: #FFF000;
+}
+p.random {
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+}
+
+
+
+

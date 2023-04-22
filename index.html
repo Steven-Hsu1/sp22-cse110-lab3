@@ -8,6 +8,9 @@
     <title>Amazon Meeting</title>
     <link rel="icon" href="./imgs/Amazon_icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,9 +27,9 @@
     <main>
         <section id="meeting-info">
             <div id="test-div">
-                <h2>Meeting Info</h2>
+                <h2 id="first-h2">Meeting Info</h2>
                 <h3>Topic: Brainstorming</h3>
-                <p>Date: April 14th, 2023</p>
+                <p class="random">Date: April 14th, 2023</p>
                 <span>Meeting ID: AMZN198301</span>
             </div>
             <hr>
@@ -54,15 +57,15 @@
         <section id="business">
             <h2>Business</h2>
             <i>Unfinished business</i>
-            <p><strong>Performance issues: </strong>Could be due to server overload. <em>Requires further
+            <p class="random"><strong>Performance issues: </strong>Could be due to server overload. <em>Requires further
                     discussion</em></p>
             <i>New business</i>
-            <p><b>Update UI/UX of site: </b>Consider more minimalistic approach to elements</p>
+            <p class="random"><b>Update UI/UX of site: </b>Consider more minimalistic approach to elements</p>
         </section>
 
         <section id="miscellaneous">
             <h2>Miscellaneous</h2>
-            <details>
+            <details class="summary">
                 <summary>Questions/Concerns</summary>
                 <p>None</p>
             </details>
@@ -75,7 +78,7 @@
 
         <section>
             <h2>Random Audio/Video</h2>
-            <audio controls>
+            <audio controls class="interactive">
                 <source src="./rec/guitar.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
@@ -133,7 +136,7 @@
                     <br>
                     <textarea name="Addinfo" id="Addinfo" cols="30" rows="10"></textarea>
                     <br>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </fieldset>
             </form>
         </section>
